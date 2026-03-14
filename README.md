@@ -81,7 +81,7 @@ To use this MCP, you need to obtain Spotify API credentials:
    - App name: "MCP Claude Spotify" (or whatever you prefer)
    - App description: "Spotify integration for Claude Desktop"
    - Website: You can leave this blank or put any URL
-   - Redirect URI: **Important** - Add `http://127.0.0.1:8888/callback`
+   - Redirect URI: **Important** - Add `http://127.0.0.1:8080/callback`
 5. Accept the terms and conditions and click "Create"
 6. In your app dashboard, you'll see the "Client ID"
 7. Click "Show Client Secret" to reveal your "Client Secret"
@@ -333,17 +333,17 @@ If you see the error "MCP Spotify: Server disconnected" in Claude Desktop:
 
 ### Browser doesn't open automatically
 If the browser doesn't open automatically during authentication, manually visit:
-`http://127.0.0.1:8888/login`
+`http://127.0.0.1:8080/login`
 
 ### Authentication error
 Make sure you've correctly configured the redirect URI in your Spotify Developer dashboard:
-`http://127.0.0.1:8888/callback`
+`http://127.0.0.1:8080/callback`
 
 ### Server startup error
 Verify that:
 - Environment variables are correctly configured in your `claude_desktop_config.json` or launch script
 - Node.js is installed and compatible (v16+)
-- Required ports (8888) are available and not blocked by firewall
+- Required ports (8080) are available and not blocked by firewall
 - You have permission to run the script in the specified location
 
 ### Tools not appearing in Claude

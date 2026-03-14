@@ -35,7 +35,7 @@ USER appuser
 # --- END SECURITY FIX ---
 
 # Expose port for Spotify auth callback
-EXPOSE 8888
+EXPOSE 8080
 
 # Default command to start the MCP server
 CMD ["node", "build/index.js"]

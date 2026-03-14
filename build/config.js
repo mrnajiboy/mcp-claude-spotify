@@ -35,7 +35,7 @@ export const API = {
  * Server configuration
  */
 export const SERVER = {
-    PORT: process.env.PORT ? parseInt(process.env.PORT) : 8888,
+    PORT: process.env.PORT ? parseInt(process.env.PORT) : 8080,
     HOST: process.env.HOST || "127.0.0.1"
 };
 /**

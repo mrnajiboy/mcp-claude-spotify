@@ -165,11 +165,11 @@ describe('MCP Server', () => {
       
       // Set up and start the server
       const server = { listen: mockListen };
-      server.listen(8888, () => {
+      server.listen(8080, () => {
         console.log('Server started');
       });
       
-      expect(mockListen).toHaveBeenCalledWith(8888, expect.any(Function));
+      expect(mockListen).toHaveBeenCalledWith(8080, expect.any(Function));
     });
   });
   
